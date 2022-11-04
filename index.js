@@ -1,6 +1,6 @@
 let text = document.querySelector("#inputNew");
 let submit = document.querySelector("#submit");
-let task = document.querySelector("#task");
+// let task = document.querySelector("#task");
 
 submit.addEventListener("click", ()=>{
     let taskNew = document.createElement("p");
@@ -10,4 +10,8 @@ submit.addEventListener("click", ()=>{
     taskNew.style.color = "white";
 
     console.log(text.value);
+    
+        taskNew.addEventListener("click", ()=> {
+            taskNew.remove();
+        })
 });
